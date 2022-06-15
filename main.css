@@ -1,0 +1,148 @@
+/* common -------------------------------------- */
+:root {
+    --red: #f25454;
+  }
+.shortblackline{
+    border-bottom: solid 1px black;
+    width:50px;
+    margin:25px auto;   
+}
+/* navbar--------------------------------------- */
+.editNav{
+    border-bottom: 1px white solid;
+    background-color: rgba(0, 0, 0,0.5)  !important;
+    z-index: 999;
+}
+.nav-link:hover{
+color: var(--red) !important;
+transition: all 0.5s; 
+}
+.fa-brands:hover{
+    color: var(--red) !important;
+    transition: all 0.5s; 
+}
+/* (home page) pageone ----------------------------*/
+.caption{
+    z-index: 99;
+}
+.caption h1{
+    font-size: 75px;
+}
+.btnSlider{
+    z-index: 9;
+    width: 400px;
+}
+.btnSlider .editBtn{
+    padding: 10px 5px;
+    background-color: transparent !important;
+    border: white solid 1px;
+    border-radius: 3px;
+}
+.movingCircle i{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    z-index: 9;
+    color: white;
+    animation-name: movingcircle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+@keyframes movingcircle{
+    0%{ bottom: 100px; }
+    100%{ bottom: 50px;} 
+}
+/* page two --------------------------------------- */
+.middleShadow{
+    font-size: 100px;
+    color: rgba(0, 0, 0,0.1);
+}
+/* page three -------------------------------------- */
+.imgAnime{
+    overflow: hidden;
+    position: relative;
+}
+.redLayer{
+position: absolute;
+top: 0px;
+left:0px;
+background-color: rgba(242, 84, 84,0.8);
+width: 100%;
+height: 100%;
+opacity: 0%;
+transition: all 0.5s;
+}
+.imgAnime img{
+    transition: all 0.5s;}
+.imgAnime:hover img{
+    transform: scale(1.1);}
+.Btn3{
+    background-color: #f25454;
+    padding: 10px 30px;}
+.imgAnime:hover .redLayer{
+    opacity: 100%;}
+.card-body:hover .redH5{
+    color: var(--red);
+    transition: all 0.5s;}
+/* page four ----------------------------------------- */
+.redH2:hover
+{color: var(--red);
+    transition: all 0.5s;}
+/* page five -----------------------------------------*/
+.carousel-indicators [data-bs-target]
+ { width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-indent: 0;}
+/* page six------------------------------------------ */
+.redP:hover
+{  color: var(--red);
+    transition: all 0.5s;}
+/*  (footer) or  page seven*/
+#pageSeven{
+    background-image: url(images/dotted-map.png);
+    background-size: cover;
+    height: fit-content;
+    background-color: #222;
+    position: relative;
+}
+#pageSeven ul li a:hover{
+    color: var(--red);
+    transition: all 0.5s;
+}
+#pageSeven ul li a{
+    color: #b0b0b0;
+    text-decoration: none;
+}
+#pageSeven ul{
+    list-style-type: none;
+}
+.parentBtn button:hover{
+    color: var(--red);
+    border-color: var(--red);
+    background-color: transparent;
+}
+.redFooter{
+    color: white;
+}
+.redFooter:hover{
+    color: var(--red);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#pageSeven::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgba(242, 84, 84,0.5);
+    transform: translate(-50% ,-50%);
+}
